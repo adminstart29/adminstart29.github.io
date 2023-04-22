@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>该项目</title>
+       <style>
+        /* 定义输入框的样式 */
+        textarea {
+            width: 1000px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>项目源码</h1>
+    <iframe src="text.txt" width="1000"  height="300" name="abc"></iframe><br>
+    <h2>和我们一起创作？</h2>
+    <form action="save_text.php" method="post">
+        <textarea name="text"></textarea>
+        <br>
+        <input type="submit" value="发送到库"> <button onclick="window.location.href='http://kemiweb.svvs.top'" type="button" id="add">刷新页面</button>
+    </form>
+</body>
+</html>
