@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google" content="notranslate" />
+	<meta name="edge" content="notranslate" />
+	<meta name="360 browser" content="notranslate">
+	<meta name="Firefox" content="notranslate">
+	<meta charset="UTF-8">
+	<link rel="icon" href="github.ico" type="image/x-icon">
+    <title>新科米主页-kemiweb</title>
+    <style>
+        /* 定义侧边栏样式 */
+        .sidebar {
+            width: 200px;
+            height: 100%;
+            background-color: #f2f2f2;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow: auto;
+            padding-top: 20px;
+        }
+        /* 定义内容区样式 */
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        /* 定义按钮样式 */
+        button {
+            display: block;
+            width: 100%;
+            background-color: #ddd;
+            border: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        /* 定义选中按钮样式 */
+        .active {
+            background-color: #bbb;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+		<h1 align="center">新科米主页</h1>
+        <button class="btn active" onclick="showContent('content1')">科米主页</button>
+        <button class="btn" onclick="showContent('content2')">科米搜索</button>
+        <button class="btn" onclick="showContent('content3')">科米码仓</button>
+		<button class="btn" onclick="showContent('content4')">在线运行</button>
+		<button class="btn" onclick="showContent('content5')">帮助文档</button>
+		<h6 align="center">赞助科米社区，让我们走的更远！</h6>
+		<img src="fish.jpg" width="200" height="200">
+		提示：支付就用，支付宝！
+    </div>
+    <div class="content">
+        <div id="content1">
+            <h2>介绍新科米主页</h2> <button onclick="window.location.href='pik.html'" type="button" id="add">节能锁屏模式</button>
+            <p>新科米主页是专注于分享HTML代码的网站，旨在为全球的Web开发者提供一个聚集和共享HTML技术的平台。我们深知，HTML是构建互联网世界的基础，因此我们致力于创建一个能够帮助程序员更轻松地掌握和使用HTML技术的社区。在科米主页，你可以找到来自各行业的HTML代码示例，并能够与其他程序员进行交流和分享。无论你是初学者还是专业开发人员，我们都为你提供了一系列个性化的学习路径和教程，让你能够快速进阶并不断提升自己的编程水平。我们相信，开源和分享是推动Web技术进步和社区发展的关键。因此，我们鼓励大家将他们的HTML代码作品分享给其他人，并为此提供一个安全、易用和富有灵感的平台。如果你是一名热爱Web开发的程序员，欢迎加入科米主页的大家庭。在这里，你会发现无穷无尽的HTML创意和有趣的技术挑战，让你的编程之路更加充满乐趣和成就感。</p>
+            <p>Comey Home is a website focused on sharing HTML code, aiming to provide a platform for web developers around the world to gather and share HTML technology. We understand that HTML is the foundation on which the Internet world is built, so we're committed to creating a community that makes it easier for programmers to master and use HTML technologies. On the Comey homepage, you can find HTML code examples from various industries and be able to communicate and share them with other programmers. Whether you're a beginner or a professional developer, we've got a series of personalized learning paths and tutorials to help you quickly progress and improve your programming. We believe that open source and sharing are key to advancing web technology and community development. Therefore, we encourage everyone to share their HTML code work with others and provide a safe, easy-to-use, and inspiring platform for doing so. If you are a programmer who loves web development, welcome to the Comey homepage family. Here, you'll find endless HTML ideas and fun technical challenges to make your programming journey more fun and rewarding.</p>
+		    <button onclick="window.location.href='code.html'" type="button" id="add">回到旧版</button>
+		</div>
+        <div id="content2" style="display:none">
+            <h2>由科米打造搜索引擎</h2>
+            <p>科米搜索是一个独立的搜索引擎，它的搜索结果页面简洁明了，没有广告和垃圾信息，科米搜索的搜索结果由科米编写，信息十分精准，直达目标。</p>
+			<img src="imc.png" width="800" height="400">
+			<button onclick="window.location.href='code.html'" type="button" id="add">尝试一下</button>
+        </div>
+        <div id="content3" style="display:none">
+            <h2>新科米码仓</h2>
+            <p>欢迎来到新科米码仓！</p>
+			<a href="./sky1/index.html"  target="_blank">1.html写一个论坛网页</a><br>
+			<a href="./sky2/index.html"  target="_blank">2.html写一个代码雨网页（黑客帝国）<br>
+			<a href="./sky3/index.html"  target="_blank">3.HTML5美观简洁大气响应式带第三方登录网页模板</a><br>
+			<a href="./sky4/index.html"  target="_blank">4.html写人生倒计时（记录时间飞逝）</a><br>
+			<a href="./sky5/index.html"  target="_blank">5.ChatGPT对于代码，他怎么看？</a><br>
+			<a href="./sky6/index.html"  target="_blank">6.手机版Microsoft copilot独家发布。</a><br>
+			<a href="./sky7/index.html"  target="_blank">7.台式小风扇（HTML+CSS+JS练手小项目）</a><br>
+			<p>科米主页是专注于分享HTML代码的网站，旨在为全球的Web开发者提供一个聚集和共享HTML技术的平台。我们深知，HTML是构建互联网世界的基础，因此我们致力于创建一个能够帮助程序员更轻松地掌握和使用HTML技术的社区。在科米主页，你可以找到来自各行业的HTML代码示例，并能够与其他程序员进行交流和分享。无论你是初学者还是专业开发人员，我们都为你提供了一系列个性化的学习路径和教程，让你能够快速进阶并不断提升自己的编程水平。我们相信，开源和分享是推动Web技术进步和社区发展的关键。因此，我们鼓励大家将他们的HTML代码作品分享给其他人，并为此提供一个安全、易用和富有灵感的平台。如果你是一名热爱Web开发的程序员，欢迎加入科米主页的大家庭。在这里，你会发现无穷无尽的HTML创意和有趣的技术挑战，让你的编程之路更加充满乐趣和成就感。</p>
+        </div>
+		<div id="content4" style="display:none">
+		    <h2>在线运行HTML代码</h2>
+		    <p>此程序由新科米主页独立开发</p>
+			<iframe src="zaixian.html" width="1000"  height="450" name="abc"></iframe><br>
+		</div>
+		<div id="content5" style="display:none">
+		    <h2>科米主页帮助文档：</h2>
+		    <h5>1.网站内的的代码有版权吗？</h5>
+			<h3>没有。</h3>
+			<hr />
+			<h5>2.我可以创建一个属于我自己的项目库吗？</h5>
+			<h3>可以，找站长QQ2722105514。</h3>
+			<hr />
+			<h5>3.我发现了网站内的代码及README存在侵权或违规，可以举报吗？</h5>
+			<h3>欢迎举报，找站长QQ2722105514。</h3>
+			<hr />
+			<h5>4.库中存在多行enter可以修复吗？</h5>
+			<h3>不必担心，网站每月会有一次库修复，到时候会自动修复。</h3>
+			<hr />
+			<h5>5.如果我发送到库里的内容有误，如何删除？</h5>
+			<h3>不理他。</h3>
+			<hr />
+			<h5>6.我申请的库遭到了攻击，我要如何恢复？</h5>
+			<h3>方法，找库管理员QQ3151883510。</h3>
+			<hr />
+			<h5>7.如何回到旧版科米主页</h5>
+			<h3>点击科米主页主界面的“回到旧版”（基本失效）。</h3>
+			<hr />
+			<h5>8.科米主页未找到页面怎么办？</h5>
+			<h3>出现这个页面已代表页面被删除，无法处理。</h3>
+			<hr />
+			<h5>9.科米主页上的代码是否公开？</h5>
+			<h3>完全公开，如果你找我们建立的库中代码需要保密，请提前告诉我们，否则泄露则后果自负。</h3>
+			<hr />
+			  <p>版权所有 © 2023 （新科米主页） @快手UP主“科米社区”</p>
+		</div>
+    </div>
+    <script>
+        function showContent(contentId) {
+            // 获取所有按钮
+            var btns = document.querySelectorAll('.btn');
+            // 遍历按钮，移除选中样式
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].classList.remove('active');
+            }
+            // 添加选中样式到当前按钮
+            event.currentTarget.classList.add('active');
+            // 获取所有内容区
+            var contents = document.querySelectorAll('.content > div');
+            // 遍历内容区，隐藏除当前内容区以外的其他内容区
+            for (var i = 0; i < contents.length; i++) {
+                if (contents[i].id === contentId) {
+                    contents[i].style.display = 'block';
+                } else {
+                    contents[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

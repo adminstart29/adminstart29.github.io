@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在节能</title>
+	<button onclick="window.location.href='index.html'" type="button" id="add">返回主页</button>
+    <style>
+        /*块元素，可以设置宽高*/
+        div{
+            width: 800px;
+            height: 500px;
+            background-color: skyblue;
+            
+            margin: 100px auto;
+            background-image: url(1.png);
+            background-size: 100% 100%;
+            /* 区域位置
+            positions设置定位方式
+            relative */
+            position: relative;
+        }
+        img:nth-child(1){
+            width: 300px;
+            height: 300px;
+            /* margin: 60px 80px; */
+            position: absolute;
+            left: 80px;
+            top: 80px;
+        }
+        img:nth-child(2){
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 338px;
+            top: 280px;
+        }
+        img:nth-child(3){
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: 438px;
+            top: 190px;
+        }
+        /* 动画模块 */
+        @keyframes round {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        img{
+            /* animation-name: round;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            animation: round 1s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="2.png" alt="" >
+        <img src="2.png" alt="" >
+        <img src="2.png" alt="" >
+    </div>
+</body>
+</html>
